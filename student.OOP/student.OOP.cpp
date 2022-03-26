@@ -11,7 +11,7 @@ public:// створюємо поля класу
     int numbOfBirthday = 0;//день народження
     string monthOfBirthday;//місяць народження
     int yearOfBirthday = 0;//рік народження
-    int phone_number = 0;//контактний телефон
+    long long int phone_number = 0;//контактний телефон
     string yourCity;// місто студента
     string yourCountry;//країна студента
     string university;//назва навчального закладу
@@ -23,7 +23,7 @@ public:// створюємо поля класу
         cout << "Student's surname- "; getline(cin, surname);
         cout << "Student's patronymic- "; getline(cin, patronymic);
         cout << "The number of student's birthday- "; cin >> numbOfBirthday; cin.ignore(32767, '\n');//використовуємо cin.ignore для видалення пробілу з пам'яті
-        cout << "The month of student's birthday- "; cin >> monthOfBirthday;
+        cout << "The month of student's birthday- "; getline(cin, monthOfBirthday);
         cout << "The year of student's birthday- "; cin >> yearOfBirthday;
         cout << "Student's phone number- "; cin >> phone_number; cin.ignore(32767, '\n');//використовуємо cin.ignore для видалення пробілу з пам'яті
         cout << "Student's city- "; getline(cin, yourCity);
